@@ -1,6 +1,7 @@
 clear all;
 clc;
 close all;
+addpath('pEM');
 
 %% load file
 
