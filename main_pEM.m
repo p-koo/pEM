@@ -134,6 +134,15 @@ disp(['L = ' num2str(data.optimalL(end))]);
 disp(['BIC = ' num2str(BIC(numStates))]);
 disp('-------------------------------------------------------');
 
+% save results
+saveFolder = 'Results';
+if ~isdir(saveFolder)
+    mkdir(saveFolder)
+end
+[tmp, name] = fileparts(filename);
+disp(['Saving results: Results/' name '.mat']); 
+save(fullfile(saveFolder,[name '.mat']),'data');
+
 
 %% Display posterior-weighted tracks
 
