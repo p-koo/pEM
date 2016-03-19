@@ -572,7 +572,7 @@ function saveresults_Callback(hObject, eventdata, handles)
 % Hint: get(hObject,'Value') returns toggle state of saveresults
 data = guidata(hObject);
 filename = get(findobj('Tag', 'fileloaded'));
-[tmp name] = fileparts(filename);
+[tmp name] = fileparts(filename.String);
 savename = [name '_Results'];
 
 savefolder = 'Results';
