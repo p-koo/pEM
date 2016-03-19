@@ -142,7 +142,7 @@ DisplayPosteriorTracks(X,data.posteriorProb);
 %% Display posterior-weighted MSD
 
 numLags = 10;
-DisplayWeightedMSD(X,posteriorProb,numLags,trackInfo.dt);
+DisplayWeightedMSD(X,data.posteriorProb,numLags,trackInfo.dt);
 
 
 %%
