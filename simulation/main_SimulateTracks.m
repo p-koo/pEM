@@ -1,3 +1,15 @@
+%-------------------------------------------------------
+% This script generates a collection of synthetic particle
+% trajectories that have different diffusive states,
+% specified by their diffusion coefficient, static localization
+% noise.  This simulation does not allow particle tracks to 
+% transition between diffusive states within the trajectory. 
+%
+% Code written by:
+% 	Peter Koo
+%	Yale University, Department of Physics, New Haven, CT, 06511
+%-------------------------------------------------------
+
 clear all;
 clc;
 close all;

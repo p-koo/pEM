@@ -1,5 +1,5 @@
 —————————————————————————————————————————————
-SUMMARY: 
+# SUMMARY: 
 
 This MATLAB graphical user interface allows the user to load a set of protein trajectories and run perturbation expectation-maximization to determine the number of diffusive states and determine the short-time diffusive properties of each state.  
 
@@ -11,8 +11,13 @@ Example: Case1_var_500.mat takes up to 15 minutes to run on a standard laptop; w
 
 To run pem_gui.m, copy “pem_gui” in the command prompt of MATLAB without the quotations.  Also provided is a MATLAB script called main_pEM.m to allow a user to adjust the code to fit their needs. 
 
+
+### Please cite:
+Koo, P. K., Weitzman, M., Sabanaygam, C. R., van Golen, K. L., & Mochrie, S. G. J Extracting Diffusive States of Rho GTPase in Live Cells: Towards In Vivo Biochemistry. PLOS Computational Biology 2015.
+
+
 —————————————————————————————————————————————
-pem_gui.m - run down
+### pem_gui.m - run down
 	1. Load Data - push button which prompts the user to select a mat file where the protein 	trajectories are stored.  This should be a cell array called X, where each element contains the 	2D protein trajectory.  Positions should be in um. (See Case1_500.mat for an example)
 	2. Filename - displays the filename of the selected file from Load Data
 
@@ -38,7 +43,7 @@ pEM parameters ->
 	16. Save Results - push button to save the results structure of pEM with the output filename. 	The output file is saved in a Results directory which is generated if it does not already exist.
 
 —————————————————————————————————————————————
-Output:
+### Output:
 
 Results structure:
 	results - array of structures for each model size 
@@ -54,7 +59,7 @@ Results structure:
 
 
 —————————————————————————————————————————————
-List of functions within pEM directory:
+### List of functions within pEM directory:
 
 main.m: matlab script to execute pEM 
 pEM.m: main function to execute the perturbation expectation-maximization procedure

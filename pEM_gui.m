@@ -190,7 +190,8 @@ for numStates = minStates:maxStates
     [baseD baseS baseP Lmax posteriorProb] = pEM(deltaX,baseD,baseP,baseS,Lmax,params,trackInfo);
 
     % calculate BIC
-    BIC(numStates) = Lmax - numStates/2*log(trackInfo.numberOfTracks);
+    nparams = 3*numStates - 1; % 2*numStates (covariance params) + numStates-1 (population frac params)
+	BIC(numStates) = Lmax - nparams/2*log(trackInfo.numberOfTracks);
 
     % display results    
     disp('-------------------------------------------------------');
